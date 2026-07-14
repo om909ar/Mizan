@@ -22,9 +22,18 @@ if (history.length === 0) {
         historyList.innerHTML += `
             <div class="money-box" onclick="openDetails(${index})">
 
-                <h2>${item.month}</h2>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
 
-                <h1>${item.balance} ريال</h1>
+    <h2>${item.month}</h2>
+
+    <button onclick="deleteRecord(${index});event.stopPropagation();"
+    style="background:none;border:none;font-size:22px;cursor:pointer;">
+        🗑️
+    </button>
+
+</div>
+
+<h1>${item.balance} ريال</h1>
 
             </div>
         `;
