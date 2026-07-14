@@ -6,6 +6,8 @@ let balance = Number(localStorage.getItem("balance")) || 0;
 
 let history = JSON.parse(localStorage.getItem("history")) || [];
 
+let actions = [];
+
 let stats = JSON.parse(localStorage.getItem("stats")) || {
 
     fajr:0,
