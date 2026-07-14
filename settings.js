@@ -42,7 +42,8 @@ const prayerText = document.getElementById("prayerValue");
 
 document.getElementById("prayerPlus").onclick = () => {
 
-    prayerValue++;
+    values.fajr++;
+localStorage.setItem("values", JSON.stringify(values));
 
     prayerText.textContent = values.fajr + " ريال";
 
