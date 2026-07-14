@@ -103,18 +103,21 @@ header h1{
 }
 
 .danger{
-    background:#ef4444;
+    background:#8B2635;
     color:#fff;
+    box-shadow:0 6px 15px rgba(139,38,53,.35);
 }
 
 .good{
-    background:#22c55e;
+    background:#1F7A5C;
     color:#fff;
+    box-shadow:0 6px 15px rgba(31,122,92,.35);
 }
 
 .sin{
-    background:#991b1b;
+    background:#5C1220;
     color:#fff;
+    box-shadow:0 6px 15px rgba(92,18,32,.45);
 }
 
 .donate-btn{
@@ -142,8 +145,11 @@ header h1{
 }
 
 .btn{
-    font-size:16px;
-    padding:14px;
+    border-radius:22px;
+padding:18px;
+font-size:17px;
+font-weight:700;
+transition:.2s ease;
 }
 
 }
