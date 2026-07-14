@@ -20,7 +20,7 @@ if (history.length === 0) {
    history.forEach((item, index) => {
 
         historyList.innerHTML += `
-            <div class="money-box">
+            <div class="money-box" onclick="openDetails(${index})">
 
                 <h2>${item.month}</h2>
 
