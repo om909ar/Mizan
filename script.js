@@ -69,6 +69,10 @@ function vibrate() {
     document.getElementById(id).onclick=()=>{
 
         balance -=5;
+        
+        stats[id]++;
+
+localStorage.setItem("stats", JSON.stringify(stats));
 
         if(balance<0){
 
