@@ -61,6 +61,23 @@ function vibrate() {
 
 });
 // =========================
+// الذنب +10
+// =========================
+
+document.getElementById("sin").onclick = () => {
+
+    balance +=10;
+
+    stats.sin++;
+
+    localStorage.setItem("stats", JSON.stringify(stats));
+
+    vibrate();
+
+    updateBalance();
+
+};
+// =========================
 // نقص 5 ريال
 // =========================
 
