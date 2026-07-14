@@ -20,7 +20,23 @@ settingsBox.innerHTML = `
 
 `;
 
-let prayerValue = 5;
+let values = JSON.parse(localStorage.getItem("values")) || {
+
+    fajr: 5,
+    dhuhr: 5,
+    asr: 5,
+    maghrib: 5,
+    isha: 5,
+
+    sin: 10,
+
+    witr: 5,
+    duha: 5,
+    zikr: 5,
+    quran: 5,
+    good: 5
+
+};
 
 const prayerText = document.getElementById("prayerValue");
 
