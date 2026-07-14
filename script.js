@@ -182,3 +182,38 @@ localStorage.setItem("history", JSON.stringify(history));
 };
 
 document.getElementById("undoBtn").onclick = undoLastAction;
+
+function undoLastAction() {
+
+    if (actions.length === 0) {
+        alert("لا توجد عملية للتراجع");
+        return;
+    }
+
+    const last = actions.pop();
+
+    balance -= last.amount;
+
+    if (last.type === "sin") {
+
+        stats.sin--;
+
+    } else {
+
+        stats[last.type]--;
+
+    }
+
+    if (stats.sin < 0) stats.sin = 0;
+
+    Object.keys(stats).forEach(key => {
+        if (stats[key] < 0) stats[key] = 0;
+    });
+
+    if (balance < 0) balance = 0;
+
+    localStorage.setItem("stats", JSON.stringify(stats));
+
+    updateBalance();
+
+}
