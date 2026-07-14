@@ -53,9 +53,10 @@ document.getElementById("prayerMinus").onclick = () => {
 
     if (prayerValue > 1) {
 
-        prayerValue--;
+        values.fajr--;
+localStorage.setItem("values", JSON.stringify(values));
 
-        prayerText.textContent = prayerValue + " ريال";
+        prayerText.textContent = values.fajr + " ريال";
 
     }
 
