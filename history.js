@@ -5,7 +5,7 @@ const historyList = document.getElementById("historyList");
 if (history.length === 0) {
 
     historyList.innerHTML = `
-        <div class="money-box" onclick="openDetails(${index})">
+        <div class="money-box">
             <h2>لا توجد سجلات حتى الآن</h2>
             <p style="color:#9CA3AF;">
                 سيتم حفظ كل شهر هنا بعد الضغط على
