@@ -38,17 +38,3 @@ detailsBox.innerHTML = `
 
     </div>
 `;
-
-document.getElementById("deleteRecord").onclick = () => {
-
-    if (confirm("هل أنت متأكد من حذف هذا السجل؟")) {
-
-        history.splice(index, 1);
-
-        localStorage.setItem("history", JSON.stringify(history));
-
-        window.location.href = "history.html";
-
-    }
-
-};
