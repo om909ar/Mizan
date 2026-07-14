@@ -56,6 +56,8 @@ let values = JSON.parse(localStorage.getItem("values")) || {
 
 const prayerText = document.getElementById("prayerValue");
 
+prayerText.textContent = values.fajr + " ريال";
+
 document.getElementById("prayerPlus").onclick = () => {
 
     values.fajr++;
