@@ -19,3 +19,27 @@ settingsBox.innerHTML = `
 </div>
 
 `;
+
+let prayerValue = 5;
+
+const prayerText = document.getElementById("prayerValue");
+
+document.getElementById("prayerPlus").onclick = () => {
+
+    prayerValue++;
+
+    prayerText.textContent = prayerValue + " ريال";
+
+};
+
+document.getElementById("prayerMinus").onclick = () => {
+
+    if (prayerValue > 1) {
+
+        prayerValue--;
+
+        prayerText.textContent = prayerValue + " ريال";
+
+    }
+
+};
