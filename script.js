@@ -67,7 +67,7 @@ function vibrate() {
 
     document.getElementById(id).onclick=()=>{
 
-        balance +=5;
+        balance += values[id];
 
         stats[id]++;
 
@@ -75,7 +75,7 @@ function vibrate() {
 
 actions.push({
     type: id,
-    amount: 5
+    amount: values[id]
 });
 
         vibrate();
