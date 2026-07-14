@@ -110,7 +110,7 @@ document.getElementById("sin").onclick = () => {
 
     document.getElementById(id).onclick=()=>{
 
-        balance -=5;
+        balance -= values[id];
         
         stats[id]++;
 
@@ -118,7 +118,7 @@ localStorage.setItem("stats", JSON.stringify(stats));
 
 actions.push({
     type: id,
-    amount: -5
+    amount: -values[id]
 });
 
 actions.push({
