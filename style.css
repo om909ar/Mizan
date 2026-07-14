@@ -128,16 +128,16 @@ header h1{
     padding:18px;
     font-size:22px;
     font-weight:bold;
-    background:#2D6A4F;
+    background:#1E3A5F;
     color:#fff;
     cursor:pointer;
     transition:.25s;
-    box-shadow:0 8px 20px rgba(45,106,79,.35);
+    box-shadow:0 8px 20px rgba(30,58,95,.35);
 }
 
 .donate-btn:active{
     transform:scale(.97);
-    background:#24533F;
+    background:#18314F;
 }
 
 @media(max-width:430px){
