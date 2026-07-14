@@ -69,7 +69,7 @@ localStorage.setItem("values", JSON.stringify(values));
 
 document.getElementById("prayerMinus").onclick = () => {
 
-    if (prayerValue > 1) {
+   if (values.fajr > 1) {
 
         values.fajr--;
 localStorage.setItem("values", JSON.stringify(values));
