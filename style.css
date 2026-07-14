@@ -181,3 +181,19 @@ transition:.2s ease;
 .bottom-nav a.active{
     color:#ffffff;
 }
+
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.undo-btn{
+    background:none;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
+    color:#ffffff;
+}
