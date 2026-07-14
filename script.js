@@ -4,6 +4,8 @@
 
 let balance = Number(localStorage.getItem("balance")) || 0;
 
+let history = JSON.parse(localStorage.getItem("history")) || [];
+
 const balanceText = document.getElementById("balanceNumber");
 
 function updateBalance() {
