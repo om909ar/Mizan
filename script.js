@@ -116,31 +116,15 @@ actions.push({
     document.getElementById(id).onclick=()=>{
 
         balance -= values[id];
-        
+
         stats[id]++;
 
-localStorage.setItem("stats", JSON.stringify(stats));
+        localStorage.setItem("stats", JSON.stringify(stats));
 
-actions.push({
-    type: id,
-    amount: -values[id]
-});
-
-
-        balance -= values[id];
-
-stats[id]++;
-
-localStorage.setItem("stats", JSON.stringify(stats));
-
-actions.push({
-    type: id,
-    amount: -values[id]
-});
-
-vibrate();
-
-updateBalance();
+        actions.push({
+            type: id,
+            amount: -values[id]
+        });
 
         vibrate();
 
@@ -149,7 +133,6 @@ updateBalance();
     }
 
 });
-
 // =========================
 // تم التصدق
 // =========================
