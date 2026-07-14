@@ -55,6 +55,11 @@ function vibrate() {
 
         localStorage.setItem("stats", JSON.stringify(stats));
 
+actions.push({
+    type: id,
+    amount: 5
+});
+
         vibrate();
 
         updateBalance();
