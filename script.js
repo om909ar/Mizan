@@ -127,11 +127,20 @@ actions.push({
 });
 
 
-        if(balance<0){
+        balance -= values[id];
 
-            balance=0;
+stats[id]++;
 
-        }
+localStorage.setItem("stats", JSON.stringify(stats));
+
+actions.push({
+    type: id,
+    amount: -values[id]
+});
+
+vibrate();
+
+updateBalance();
 
         vibrate();
 
