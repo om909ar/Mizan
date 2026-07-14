@@ -49,6 +49,10 @@ function vibrate() {
 
         balance +=5;
 
+        stats[id]++;
+
+        localStorage.setItem("stats", JSON.stringify(stats));
+
         vibrate();
 
         updateBalance();
@@ -56,21 +60,6 @@ function vibrate() {
     }
 
 });
-
-// =========================
-// الذنب +10
-// =========================
-
-document.getElementById("sin").onclick=()=>{
-
-    balance +=10;
-
-    vibrate();
-
-    updateBalance();
-
-};
-
 // =========================
 // نقص 5 ريال
 // =========================
