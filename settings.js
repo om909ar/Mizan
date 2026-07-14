@@ -44,7 +44,7 @@ document.getElementById("prayerPlus").onclick = () => {
 
     prayerValue++;
 
-    prayerText.textContent = prayerValue + " ريال";
+    prayerText.textContent = values.fajr + " ريال";
 
 };
 
