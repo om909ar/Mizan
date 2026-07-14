@@ -49,3 +49,17 @@ function openDetails(index){
     window.location.href = "details.html";
 
 }
+
+function deleteRecord(index){
+
+    if(confirm("هل أنت متأكد من حذف هذا السجل؟")){
+
+        history.splice(index, 1);
+
+        localStorage.setItem("history", JSON.stringify(history));
+
+        location.reload();
+
+    }
+
+}
