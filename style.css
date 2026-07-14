@@ -137,6 +137,7 @@ header h1{
 
 .donate-btn:active{
     transform:scale(.97);
+    background:#24533F;
 }
 
 @media(max-width:430px){
