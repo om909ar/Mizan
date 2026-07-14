@@ -91,7 +91,7 @@ actions.push({
 
 document.getElementById("sin").onclick = () => {
 
-    balance +=10;
+    balance += values.sin;
 
     stats.sin++;
 
@@ -123,7 +123,7 @@ actions.push({
 
 actions.push({
     type: "sin",
-    amount: 10
+    amount: values.sin
 });
 
         if(balance<0){
