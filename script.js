@@ -92,11 +92,25 @@ localStorage.setItem("stats", JSON.stringify(stats));
 // تم التصدق
 // =========================
 
-document.getElementById("donate").onclick=()=>{
+document.getElementById("donate").onclick = () => {
 
-    if(confirm("هل أنت متأكد أنك تصدقت بالمبلغ؟")){
+    if (confirm("هل أنت متأكد أنك تصدقت بالمبلغ؟")) {
 
-        balance=0;
+        const month = new Date().toLocaleDateString("ar-SA", {
+            month: "long",
+            year: "numeric"
+        });
+
+        history.push({
+            month: month,
+            balance: balance,
+            stats: { ...stats }
+        });
+
+        localStorage.setItem("history", JSON.stringify(history));
+
+        balance = 0;
+        localStorage.setItem("balance", balance);
 
         updateBalance();
 
