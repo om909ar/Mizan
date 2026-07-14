@@ -1,5 +1,21 @@
 const settingsBox = document.getElementById("settingsBox");
 
+const items = [
+    { id: "fajr", name: "🕌 الفجر" },
+    { id: "dhuhr", name: "🕌 الظهر" },
+    { id: "asr", name: "🕌 العصر" },
+    { id: "maghrib", name: "🕌 المغرب" },
+    { id: "isha", name: "🕌 العشاء" },
+
+    { id: "sin", name: "❌ الذنب" },
+
+    { id: "witr", name: "🤲 الوتر" },
+    { id: "duha", name: "☀️ الضحى" },
+    { id: "zikr", name: "📿 الذكر" },
+    { id: "quran", name: "📖 القرآن" },
+    { id: "good", name: "❤️ عمل الخير" }
+];
+
 settingsBox.innerHTML = `
 
 <div class="money-box">
