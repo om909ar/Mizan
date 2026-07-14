@@ -118,14 +118,27 @@ document.getElementById("donate").onclick = () => {
             year: "numeric"
         });
 
-        history.push({
-            month: month,
-            balance: balance,
-            stats: { ...stats }
-        });
+        const existingIndex = history.findIndex(item => item.month === month);
 
-        localStorage.setItem("history", JSON.stringify(history));
+if (existingIndex !== -1) {
 
+    history[existingIndex] = {
+        month: month,
+        balance: balance,
+        stats: { ...stats }
+    };
+
+} else {
+
+    history.push({
+        month: month,
+        balance: balance,
+        stats: { ...stats }
+    });
+
+}
+
+localStorage.setItem("history", JSON.stringify(history));
         balance = 0;
         localStorage.setItem("balance", balance);
 
