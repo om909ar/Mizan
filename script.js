@@ -97,6 +97,11 @@ document.getElementById("sin").onclick = () => {
 
     localStorage.setItem("stats", JSON.stringify(stats));
 
+actions.push({
+    type: "sin",
+    amount: values.sin
+});
+
     vibrate();
 
     updateBalance();
