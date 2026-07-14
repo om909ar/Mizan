@@ -6,6 +6,24 @@ let balance = Number(localStorage.getItem("balance")) || 0;
 
 let history = JSON.parse(localStorage.getItem("history")) || [];
 
+let stats = JSON.parse(localStorage.getItem("stats")) || {
+
+    fajr:0,
+    dhuhr:0,
+    asr:0,
+    maghrib:0,
+    isha:0,
+
+    sin:0,
+
+    witr:0,
+    duha:0,
+    zikr:0,
+    quran:0,
+    good:0
+
+};
+
 const balanceText = document.getElementById("balanceNumber");
 
 function updateBalance() {
