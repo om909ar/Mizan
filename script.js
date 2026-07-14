@@ -10,7 +10,7 @@ let actions = [];
 
 let values = JSON.parse(localStorage.getItem("values")) || {
 
-    fajr: 5,
+    fajr: 10,
     dhuhr: 5,
     asr: 5,
     maghrib: 5,
