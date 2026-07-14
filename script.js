@@ -98,6 +98,11 @@ document.getElementById("sin").onclick = () => {
 
 localStorage.setItem("stats", JSON.stringify(stats));
 
+actions.push({
+    type: "sin",
+    amount: 10
+});
+
         if(balance<0){
 
             balance=0;
