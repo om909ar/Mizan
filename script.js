@@ -113,10 +113,24 @@ document.getElementById("donate").onclick = () => {
 
     if (confirm("هل أنت متأكد أنك تصدقت بالمبلغ؟")) {
 
-        const month = new Date().toLocaleDateString("ar-SA", {
-            month: "long",
-            year: "numeric"
-        });
+        const months = [
+    "يناير",
+    "فبراير",
+    "مارس",
+    "أبريل",
+    "مايو",
+    "يونيو",
+    "يوليو",
+    "أغسطس",
+    "سبتمبر",
+    "أكتوبر",
+    "نوفمبر",
+    "ديسمبر"
+];
+
+const now = new Date();
+
+const month = `${months[now.getMonth()]} ${now.getFullYear()}`;
 
         const existingIndex = history.findIndex(item => item.month === month);
 
