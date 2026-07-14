@@ -34,23 +34,44 @@ header h1{
 }
 
 .money-box{
-    background:#1b1f2a;
-    border-radius:28px;
-    padding:35px 20px;
+    background:linear-gradient(180deg,#1f2534,#171b25);
+    border:1px solid rgba(255,215,0,.12);
+    border-radius:30px;
+    padding:40px 25px;
     text-align:center;
     margin-bottom:30px;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
 }
 
 .money-icon{
-    font-size:50px;
+    font-size:52px;
+    margin-bottom:15px;
 }
 
-.balance{
-    margin-top:15px;
-    font-size:48px;
-    font-weight:bold;
-    color:#4ade80;
+.balance-area{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:8px;
+}
+
+.balance-number{
+    font-size:70px;
+    font-weight:800;
+    color:#ffffff;
+    line-height:1;
+}
+
+.currency{
+    font-size:24px;
+    color:#bfc5d2;
+    margin-bottom:10px;
+}
+
+.balance-title{
+    margin-top:18px;
+    color:#8b94a7;
+    font-size:16px;
 }
 
 .buttons{
