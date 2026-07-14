@@ -17,7 +17,7 @@ if (history.length === 0) {
 
 } else {
 
-    history.forEach(item => {
+   history.forEach((item, index) => {
 
         historyList.innerHTML += `
             <div class="money-box">
