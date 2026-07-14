@@ -23,8 +23,11 @@ body{
 }
 
 header{
-    text-align:center;
-    margin-bottom:14px;
+    .header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
 }
 
 header h1{
@@ -191,9 +194,10 @@ transition:.2s ease;
 }
 
 .undo-btn{
-    background:none;
+    width:42px;
+    height:42px;
     border:none;
-    font-size:24px;
+    background:transparent;
+    font-size:26px;
     cursor:pointer;
-    color:#ffffff;
 }
