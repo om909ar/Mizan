@@ -4,10 +4,10 @@
 
 let balance = Number(localStorage.getItem("balance")) || 0;
 
-const balanceText = document.getElementById("balance");
+const balanceText = document.getElementById("balanceNumber");
 
 function updateBalance() {
-    balanceText.textContent = balance + " ريال";
+    balanceText.textContent = balance;
     localStorage.setItem("balance", balance);
 }
 
