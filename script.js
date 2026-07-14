@@ -99,6 +99,11 @@ document.getElementById("sin").onclick = () => {
 localStorage.setItem("stats", JSON.stringify(stats));
 
 actions.push({
+    type: id,
+    amount: -5
+});
+
+actions.push({
     type: "sin",
     amount: 10
 });
