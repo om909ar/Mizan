@@ -180,3 +180,5 @@ localStorage.setItem("history", JSON.stringify(history));
     }
 
 };
+
+document.getElementById("undoBtn").onclick = undoLastAction;
