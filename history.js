@@ -32,3 +32,11 @@ if (history.length === 0) {
     });
 
 }
+
+function openDetails(index){
+
+    localStorage.setItem("selectedHistory", index);
+
+    window.location.href = "details.html";
+
+}
