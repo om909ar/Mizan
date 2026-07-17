@@ -23,6 +23,8 @@ detailsBox.innerHTML = `
         <p>🕌 العصر : ${item.stats.asr}</p>
         <p>🕌 المغرب : ${item.stats.maghrib}</p>
         <p>🕌 العشاء : ${item.stats.isha}</p>
+        <p>🕌 الجمعة : ${item.stats.jumuah}</p>
+
 
         <hr>
 
