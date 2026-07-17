@@ -22,7 +22,7 @@ let values = JSON.parse(localStorage.getItem("values")) || {
     duha: 5,
     zikr: 5,
     quran: 5,
-    good: 5
+    good: 10
 
 };
 
