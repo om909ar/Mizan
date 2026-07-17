@@ -226,3 +226,15 @@ transition:.2s ease;
     border-color:#d4af37;
     box-shadow:0 0 12px rgba(212,175,55,.5);
 }
+
+.month-reminder{
+    display:none;
+    background:#d4af37;
+    color:#111;
+    padding:12px;
+    margin:15px 0;
+    border-radius:12px;
+    text-align:center;
+    font-weight:bold;
+    box-shadow:0 0 12px rgba(212,175,55,.35);
+}
