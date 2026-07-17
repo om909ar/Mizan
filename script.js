@@ -228,3 +228,26 @@ function undoLastAction() {
     updateBalance();
 
 }
+
+function updateDayBadge() {
+    const badge = document.getElementById("dayBadge");
+    if (!badge) return;
+
+    const today = new Date();
+
+    badge.textContent = `📅 ${today.getDate()}`;
+
+    const lastDay = new Date(
+        today.getFullYear(),
+        today.getMonth() + 1,
+        0
+    ).getDate();
+
+    if (today.getDate() === lastDay) {
+        badge.classList.add("last-day");
+    } else {
+        badge.classList.remove("last-day");
+    }
+}
+
+updateDayBadge();
