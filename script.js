@@ -111,7 +111,7 @@ actions.push({
 // نقص 5 ريال
 // =========================
 
-["witr","duha","zikr","quran","good"].forEach(id=>{
+["witr","duha","zikr","quran","khf"].forEach(id=>{
 
     document.getElementById(id).onclick=()=>{
 
