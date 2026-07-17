@@ -244,7 +244,7 @@ function updateDayBadge() {
         0
     ).getDate();
 
-    if (today.getDate() === lastDay) {
+    if (true) {
     badge.classList.add("last-day");
     reminder.style.display = "block";
 } else {
