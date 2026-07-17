@@ -40,7 +40,7 @@ let stats = JSON.parse(localStorage.getItem("stats")) || {
     duha:0,
     zikr:0,
     quran:0,
-    good:0
+    khf:0
 
 };
 
