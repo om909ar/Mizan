@@ -112,6 +112,12 @@ header h1{
     box-shadow:0 6px 15px rgba(139,38,53,.35);
 }
 
+.jum{
+    background:#B8860B;
+    color:#fff;
+    box-shadow:0 6px 15px rgba(92,18,32,.45);
+}
+
 .good{
     background:#1F7A5C;
     color:#fff;
