@@ -41,15 +41,15 @@ header h1{
     background:linear-gradient(180deg,#1f2534,#171b25);
     border:1px solid rgba(255,215,0,.12);
     border-radius:30px;
-    padding:15px 20px;
+    padding:12px 20px;
     text-align:center;
     margin-bottom:20px;
     box-shadow:0 20px 45px rgba(0,0,0,.45);
 }
 
 .money-icon{
-    font-size:30px;
-    margin-bottom:8px;
+    font-size:24px;
+    margin-bottom:4px;
 }
 
 .balance-area{
@@ -60,7 +60,7 @@ header h1{
 }
 
 .balance-number{
-    font-size:50px;
+    font-size:42px;
     font-weight:800;
     color:#ffffff;
     line-height:1;
@@ -73,9 +73,9 @@ header h1{
 }
 
 .balance-title{
-    margin-top:10px;
+    margin-top:6px;
     color:#8b94a7;
-    font-size:16px;
+    font-size:14px;
 }
 
 .buttons{
