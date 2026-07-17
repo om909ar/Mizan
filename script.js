@@ -245,10 +245,11 @@ function updateDayBadge() {
     ).getDate();
 
     if (today.getDate() === lastDay) {
-        badge.classList.add("last-day");
-    } else {
-        badge.classList.remove("last-day");
-    }
+    badge.classList.add("last-day");
+    reminder.style.display = "block";
+} else {
+    badge.classList.remove("last-day");
+    reminder.style.display = "none";
 }
 
 updateDayBadge();
