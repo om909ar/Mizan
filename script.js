@@ -231,6 +231,7 @@ function undoLastAction() {
 
 function updateDayBadge() {
     const badge = document.getElementById("dayBadge");
+    const reminder = document.getElementById("monthReminder");
     if (!badge) return;
 
     const today = new Date();
