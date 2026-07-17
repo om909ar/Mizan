@@ -231,7 +231,6 @@ function undoLastAction() {
 
 function updateDayBadge() {
     const badge = document.getElementById("dayBadge");
-    const reminder = document.getElementById("monthReminder");
     if (!badge) return;
 
     const today = new Date();
@@ -244,12 +243,11 @@ function updateDayBadge() {
         0
     ).getDate();
 
-    if (true) {
-    badge.classList.add("last-day");
-    reminder.style.display = "block";
-} else {
-    badge.classList.remove("last-day");
-    reminder.style.display = "none";
+    if (today.getDate() === lastDay) {
+        badge.classList.add("last-day");
+    } else {
+        badge.classList.remove("last-day");
+    }
 }
 
 updateDayBadge();
