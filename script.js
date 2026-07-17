@@ -192,10 +192,7 @@ localStorage.setItem("history", JSON.stringify(history));
 
 };
 
-document.getElementById("undoBtn").addEventListener("click", function () {
-    alert("اشتغل الزر");
-    undoLastAction();
-});
+document.getElementById("undoBtn").addEventListener("click", undoLastAction);
 
 function undoLastAction() {
 
