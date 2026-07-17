@@ -15,7 +15,7 @@ let values = JSON.parse(localStorage.getItem("values")) || {
     asr: 5,
     maghrib: 5,
     isha: 5,
-
+    jumuah: 30,
     sin: 10,
 
     witr: 5,
@@ -33,7 +33,7 @@ let stats = JSON.parse(localStorage.getItem("stats")) || {
     asr:0,
     maghrib:0,
     isha:0,
-
+    jumuah:0,
     sin:0,
 
     witr:0,
@@ -63,7 +63,7 @@ function vibrate() {
 // زيادة 5 ريال
 // =========================
 
-["fajr","dhuhr","asr","maghrib","isha"].forEach(id=>{
+["fajr","dhuhr","asr","maghrib","isha","jumuah"].forEach(id=>{
 
     document.getElementById(id).onclick=()=>{
 
