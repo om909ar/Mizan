@@ -235,7 +235,7 @@ function updateDayBadge() {
 
     const today = new Date();
 
-    badge.textContent = `📅 ${today.getDate()}`;
+    badge.textContent = `${today.getDate()}`;
 
     const lastDay = new Date(
         today.getFullYear(),
