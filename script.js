@@ -243,7 +243,7 @@ function updateDayBadge() {
         0
     ).getDate();
 
-    if (today.getDate() === lastDay) {
+    if (true) {
         badge.classList.add("last-day");
     } else {
         badge.classList.remove("last-day");
