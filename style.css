@@ -207,3 +207,11 @@ transition:.2s ease;
     font-size:40px;
     cursor:pointer;
 }
+
+.app-title{
+    text-align:center;
+    color:#8b94a7;
+    font-size:15px;
+    font-weight:500;
+    margin:8px 0 18px;
+}
