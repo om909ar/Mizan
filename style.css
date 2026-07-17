@@ -117,6 +117,12 @@ header h1{
     box-shadow:0 6px 15px rgba(31,122,92,.35);
 }
 
+.good{
+    background:#1F7A5C;
+    color:#fff;
+    box-shadow:0 6px 15px rgba(31,122,92,.35);
+}
+
 .sin{
     background:#463E41;
     color:#fff;
