@@ -22,18 +22,21 @@ if (history.length === 0) {
         historyList.innerHTML += `
             <div class="history-card" onclick="openDetails(${index})">
 
-                <div style="display:flex;justify-content:space-between;align-items:center;">
+               <div class="history-top">
 
     <h2>${item.month}</h2>
 
-    <button onclick="deleteRecord(${index});event.stopPropagation();"
-    style="background:none;border:none;font-size:22px;cursor:pointer;">
+    <button class="delete-btn"
+        onclick="deleteRecord(${index});event.stopPropagation();">
         🗑️
     </button>
 
 </div>
 
-<h1>${item.balance} ريال</h1>
+<div class="history-amount">
+    ${item.balance}
+    <span>ريال</span>
+</div>
 
             </div>
         `;
