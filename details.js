@@ -73,15 +73,35 @@ detailsBox.innerHTML = `
 
         <div class="section-space"></div>
 
-        <p>❌ الذنب : ${item.stats.sin}</p>
+       
 
         <div class="section-space"></div>
 
-        <p>🤲 الوتر : ${item.stats.witr}</p>
-        <p>☀️ الضحى : ${item.stats.duha}</p>
-        <p>📿 الذكر : ${item.stats.zikr}</p>
-        <p>📖 القرآن : ${item.stats.quran}</p>
-        <p>🤍 سورة الكهف : ${item.stats.khf}</p>
+        <h3 class="section-title">الأعمال الصالحة</h3>
 
-    </div>
+<div class="stat-row">
+    <span>🤲 الوتر</span>
+    <span>${item.stats.witr}</span>
+</div>
+
+<div class="stat-row">
+    <span>☀️ الضحى</span>
+    <span>${item.stats.duha}</span>
+</div>
+
+<div class="stat-row">
+    <span>📿 الذكر</span>
+    <span>${item.stats.zikr}</span>
+</div>
+
+<div class="stat-row">
+    <span>📖 القرآن</span>
+    <span>${item.stats.quran}</span>
+</div>
+
+<div class="stat-row">
+    <span>🤍 سورة الكهف</span>
+    <span>${item.stats.khf}</span>
+</div>
+
 `;
