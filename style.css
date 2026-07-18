@@ -339,3 +339,40 @@ transition:.2s ease;
     font-weight:700;
     margin:30px 6px 16px;
 }
+
+.summary-card{
+    background:#1B1D22;
+    border:1px solid rgba(212,175,55,.08);
+    border-radius:24px;
+    padding:28px 20px;
+    margin-bottom:24px;
+    text-align:center;
+}
+
+.summary-month{
+    color:#D4AF37;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.summary-title{
+    color:#9CA3AF;
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.summary-balance{
+    color:#fff;
+    font-size:46px;
+    font-weight:800;
+    line-height:1;
+}
+
+.summary-balance span{
+    font-size:20px;
+    color:#D4AF37;
+    font-weight:600;
+    margin-right:6px;
+}
