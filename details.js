@@ -11,12 +11,15 @@ const detailsBox = document.getElementById("detailsBox");
 monthTitle.textContent = item.month;
 
 detailsBox.innerHTML = `
-    <div class="money-box">
 
-        <h2>💰 مبلغ التصدق</h2>
-        <h1>${item.balance} ريال</h1>
+<div class="summary-card">
 
-        <div class="section-space"></div>
+    <h2>💰 مبلغ التصدق</h2>
+    <h1>${item.balance} ريال</h1>
+
+</div>
+
+<div class="group-card">
 
         <div class="stat-row">
     <span>🕌 الفجر</span>
@@ -67,18 +70,14 @@ detailsBox.innerHTML = `
     <span>❌ الذنب</span>
 
     <span>${item.stats.sin}</span>
+</div>
 
 </div>
 
+<div class="group-card">
 
-        <div class="section-space"></div>
-
-       
-
-        <div class="section-space"></div>
-
-        <h3 class="section-title">الأعمال الصالحة</h3>
-
+<h3 class="section-title">الأعمال الصالحة</h3>
+        
 <div class="stat-row">
     <span>🤲 الوتر</span>
     <span>${item.stats.witr}</span>
@@ -102,6 +101,8 @@ detailsBox.innerHTML = `
 <div class="stat-row">
     <span>🤍 سورة الكهف</span>
     <span>${item.stats.khf}</span>
+</div>
+
 </div>
 
 `;
