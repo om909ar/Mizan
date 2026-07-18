@@ -332,3 +332,10 @@ transition:.2s ease;
 
     font-size:18px;
 }
+
+.section-title{
+    color:#D4AF37;
+    font-size:18px;
+    font-weight:700;
+    margin:30px 6px 16px;
+}
