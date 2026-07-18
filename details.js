@@ -22,11 +22,53 @@ detailsBox.innerHTML = `
     <span>🕌 الفجر</span>
     <span>${item.stats.fajr}</span>
 </div>
-        <p>🕌 الظهر : ${item.stats.dhuhr}</p>
-        <p>🕌 العصر : ${item.stats.asr}</p>
-        <p>🕌 المغرب : ${item.stats.maghrib}</p>
-        <p>🕌 العشاء : ${item.stats.isha}</p>
-        <p>🕌 الجمعة : ${item.stats.jumuah}</p>
+        <div class="stat-row">
+
+    <span>🕌 الظهر</span>
+
+    <span>${item.stats.dhuhr}</span>
+
+</div>
+
+<div class="stat-row">
+
+    <span>🕌 العصر</span>
+
+    <span>${item.stats.asr}</span>
+
+</div>
+
+<div class="stat-row">
+
+    <span>🕌 المغرب</span>
+
+    <span>${item.stats.maghrib}</span>
+
+</div>
+
+<div class="stat-row">
+
+    <span>🕌 العشاء</span>
+
+    <span>${item.stats.isha}</span>
+
+</div>
+
+<div class="stat-row">
+
+    <span>🕌 الجمعة</span>
+
+    <span>${item.stats.jumuah}</span>
+
+</div>
+
+<div class="stat-row">
+
+    <span>❌ الذنب</span>
+
+    <span>${item.stats.sin}</span>
+
+</div>
 
 
         <div class="section-space"></div>
