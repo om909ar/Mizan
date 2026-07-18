@@ -36,7 +36,7 @@ detailsBox.innerHTML = `
         <p>☀️ الضحى : ${item.stats.duha}</p>
         <p>📿 الذكر : ${item.stats.zikr}</p>
         <p>📖 القرآن : ${item.stats.quran}</p>
-        <p>❤️ عمل الخير : ${item.stats.good}</p>
+        <p>🤍 سورة الكهف : ${item.stats.khf}</p>
 
     </div>
 `;
