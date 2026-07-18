@@ -14,8 +14,18 @@ detailsBox.innerHTML = `
 
 <div class="summary-card">
 
-    <h2>💰 مبلغ التصدق</h2>
-    <h1>${item.balance} ريال</h1>
+    <div class="summary-month">
+        ${item.month}
+    </div>
+
+    <div class="summary-title">
+        💰 مبلغ التصدق
+    </div>
+
+    <div class="summary-balance">
+        ${item.balance}
+        <span>ريال</span>
+    </div>
 
 </div>
 
