@@ -296,3 +296,7 @@ transition:.2s ease;
 .delete-btn:active{
     transform:scale(.9);
 }
+
+.section-space{
+    height:24px;
+}
