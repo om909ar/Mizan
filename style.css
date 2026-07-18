@@ -265,3 +265,34 @@ transition:.2s ease;
     font-size:34px;
     font-weight:700;
 }
+
+.history-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.history-amount{
+    margin-top:18px;
+    font-size:36px;
+    font-weight:700;
+    color:#D4AF37;
+}
+
+.history-amount span{
+    font-size:18px;
+    color:#9CA3AF;
+    margin-right:6px;
+}
+
+.delete-btn{
+    background:none;
+    border:none;
+    font-size:22px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.delete-btn:active{
+    transform:scale(.9);
+}
