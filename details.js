@@ -16,7 +16,7 @@ detailsBox.innerHTML = `
         <h2>💰 مبلغ التصدق</h2>
         <h1>${item.balance} ريال</h1>
 
-        <hr>
+        <div class="section-space"></div>
 
         <p>🕌 الفجر : ${item.stats.fajr}</p>
         <p>🕌 الظهر : ${item.stats.dhuhr}</p>
@@ -26,11 +26,11 @@ detailsBox.innerHTML = `
         <p>🕌 الجمعة : ${item.stats.jumuah}</p>
 
 
-        <hr>
+        <div class="section-space"></div>
 
         <p>❌ الذنب : ${item.stats.sin}</p>
 
-        <hr>
+        <div class="section-space"></div>
 
         <p>🤲 الوتر : ${item.stats.witr}</p>
         <p>☀️ الضحى : ${item.stats.duha}</p>
