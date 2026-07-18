@@ -18,7 +18,10 @@ detailsBox.innerHTML = `
 
         <div class="section-space"></div>
 
-        <p>🕌 الفجر : ${item.stats.fajr}</p>
+        <div class="stat-row">
+    <span>🕌 الفجر</span>
+    <span>${item.stats.fajr}</span>
+</div>
         <p>🕌 الظهر : ${item.stats.dhuhr}</p>
         <p>🕌 العصر : ${item.stats.asr}</p>
         <p>🕌 المغرب : ${item.stats.maghrib}</p>
