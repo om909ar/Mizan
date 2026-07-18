@@ -4,11 +4,9 @@ const index = localStorage.getItem("selectedHistory");
 
 const item = history[index];
 
-const monthTitle = document.getElementById("monthTitle");
 
 const detailsBox = document.getElementById("detailsBox");
 
-monthTitle.textContent = item.month;
 
 detailsBox.innerHTML = `
 
