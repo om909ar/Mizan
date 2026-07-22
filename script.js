@@ -8,6 +8,8 @@ let history = JSON.parse(localStorage.getItem("history")) || [];
 
 let actions = [];
 
+let dailyClicks = JSON.parse(localStorage.getItem("dailyClicks")) || {};
+
 let values = JSON.parse(localStorage.getItem("values")) || {
 
     fajr: 10,
@@ -67,7 +69,18 @@ function vibrate() {
 
     document.getElementById(id).onclick=()=>{
 
+const today = new Date().toDateString();
+
+if (dailyClicks[id] === today) {
+    alert("تم تسجيل هذه الصلاة اليوم");
+    return;
+}
+
+dailyClicks[id] = today;
+localStorage.setItem("dailyClicks", JSON.stringify(dailyClicks));
+
         balance += values[id];
+        
 
         stats[id]++;
 
